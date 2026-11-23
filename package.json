@@ -1,0 +1,14 @@
+{
+  "name": "ctybc-website-worldwide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^49.0.0"
+  }
+}

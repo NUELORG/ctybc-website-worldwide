@@ -7,3 +7,5 @@ footer.innerHTML=`<footer class="site-footer"><div class="footer-main"><div><a c
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
 nav.querySelectorAll('a').forEach(item=>item.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+
+const cmsRuntime=document.createElement('script');cmsRuntime.src='/cms-client.js';cmsRuntime.defer=true;document.head.append(cmsRuntime);
