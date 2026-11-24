@@ -5,7 +5,7 @@
     ['blog.html', 'Blog'], ['blog-quiet-start.html', 'A Quiet Start'], ['blog-confidence-community.html', 'Confidence Grows in Community'],
     ['blog-faith-in-action.html', 'Faith Beyond Sunday'], ['blog-honest-questions.html', 'Honest Questions'], ['blog-begin-again.html', 'Begin Again'],
     ['story-maiden-quiz.html', 'Maiden Bible Quiz story'], ['story-october-gathering.html', 'October gathering story'], ['story-teen-classes.html', 'Teen classes story'],
-    ['shop.html', 'Bookshop'], ['give.html', 'Giving'], ['donate.html', 'Donate'], ['contact.html', 'Contact'],
+    ['shop.html', 'Bookshop'], ['give.html', 'Giving'], ['donate.html', 'Donate'], ['board.html', 'Board of Trustees'], ['contact.html', 'Contact'],
   ];
   const $ = (id) => document.getElementById(id);
   const loginShell = $('login-shell'), editor = $('editor'), loginForm = $('login-form'), loginMessage = $('login-message');
@@ -213,11 +213,13 @@
     event.preventDefault(); const message = $('photo-message'); const files = [...$('gallery-file').files];
     if (!files.length) return; message.textContent = `Uploading ${files.length} photo${files.length === 1 ? '' : 's'}…`;
     try {
+      const category = $('gallery-category').value;
+      const yearValue = $('gallery-year').value.trim();
+      if (category === 'outreach' && !yearValue) throw new Error('Choose the outreach year before uploading.');
       const uploaded = await Promise.all(files.map(upload));
       const caption = $('gallery-caption').value;
-      const yearValue = $('gallery-year').value.trim();
       const year = /^\d{4}$/.test(yearValue) ? yearValue : '';
-      uploaded.forEach((photo) => content.gallery.push({ id: crypto.randomUUID(), src: photo.url, title: caption, description: $('gallery-description').value.trim() || 'A moment from the CTYBC photo archive.', year }));
+      uploaded.forEach((photo) => content.gallery.push({ id: crypto.randomUUID(), src: photo.url, title: caption, description: $('gallery-description').value.trim() || 'A moment from the CTYBC photo archive.', year, category }));
       if (await saveContent('Saving photos to the archive…')) {
         message.style.color = '#246a48'; message.textContent = `${uploaded.length} photo${uploaded.length === 1 ? '' : 's'} added to the public archive.`;
         $('photo-form').reset();

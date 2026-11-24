@@ -221,3 +221,36 @@ body{background:#f5f3f0;color:#19171c}
 @media(max-width:1050px){.gallery-memory-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}}
 @media(max-width:700px){.gallery-memory-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-inline:5%}.gallery-memory-grid .photo-card{border-radius:10px}.gallery-memory-grid .photo-card figcaption{padding:27px 11px 11px}.gallery-memory-grid .photo-card figcaption b{font-size:11px}.gallery-memory-grid .photo-card figcaption span{font-size:9px}.gallery-filters{padding-inline:5%;gap:7px}.gallery-filter{padding:8px 11px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.gallery-memory-grid .photo-card,.gallery-memory-grid .photo-card img,.gallery-memory-grid .photo-card figcaption,.gallery-filter{transition:none!important;transform:none!important}}
+
+/* Board, programme, partnership, outreach-year and photo viewer additions */
+.home-programs-four{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:18px;padding:68px 7%;background:#f8f6f3}
+.home-programs-four .home-programs-heading{grid-column:1/-1;max-width:650px;margin-bottom:12px}
+.home-programs-four article{padding:23px 21px;background:#fff;border:1px solid #e4dce4;box-shadow:0 9px 26px #291a3410}
+.home-programs-four article h3{font:700 18px/1.2 var(--head);margin:17px 0 10px}
+.home-programs-four article p{min-height:90px;color:#716a74;font-size:11px}
+.home-programs-four article>a{color:var(--purple);font:700 10px var(--head)}
+.mast-image .hero-archive-photo{animation:hero-gentle-zoom 28s ease-in-out infinite alternate}
+@keyframes hero-gentle-zoom{to{transform:scale(1.09)}}
+.board-hero{background:linear-gradient(90deg,rgba(36,21,47,.91),rgba(36,21,47,.52)),url('assets/board/board-trustees.jpeg') center 24%/cover}
+.board-hero em{color:var(--gold)}
+.board-intro{padding:70px 8% 34px;text-align:center}
+.board-intro h2,.board-beliefs h2,.certification-section h2,.donation-options>h2,.outreach-years h2{font:800 clamp(34px,4vw,51px)/1.04 var(--head);letter-spacing:-.06em;margin:15px 0}
+.board-intro p{max-width:690px;margin:0 auto;color:#716976}
+.board-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:22px 8% 85px}
+.board-card{padding:25px;background:#fff;border:1px solid #e9e2e9;box-shadow:0 12px 34px #24152f0d}
+.board-portrait{width:128px;height:128px;margin:0 auto 20px;border-radius:50%;border:5px solid white;box-shadow:0 0 0 2px #9c719e;background-image:url('assets/board/board-trustees.jpeg');background-repeat:no-repeat;background-color:#4b4650}
+.portrait-1{background-position:-174px -240px}.portrait-2{background-position:-374px -240px}.portrait-3{background-position:-574px -240px}.portrait-4{background-position:-774px -240px}.portrait-5{background-position:-974px -240px}.portrait-6{background-position:-174px -506px}.portrait-7{background-position:-374px -506px}.portrait-8{background-position:-574px -506px}.portrait-9{background-position:-774px -506px}
+.board-role{display:block;text-align:center;color:#80518c;font:800 9px var(--head);letter-spacing:.15em}
+.board-card h3{text-align:center;font:800 17px/1.25 var(--head);margin:9px 0 12px}
+.board-card p{margin:0;color:#706a74;font-size:11px;line-height:1.8}
+.board-beliefs{display:grid;grid-template-columns:1fr 1fr;gap:10%;padding:76px 10%;background:#24152f;color:#fff}
+.board-belief-intro .eyebrow{color:var(--gold)}.board-belief-intro p{max-width:540px;color:#d2c8d5;font-size:13px;line-height:1.9}
+.vision-mission{display:grid;gap:18px;align-content:center}.vision-mission article{border-left:2px solid var(--gold);padding:8px 0 8px 22px}.vision-mission article span{font:800 13px var(--head);letter-spacing:.1em;color:var(--gold)}.vision-mission p{font:500 20px/1.5 var(--display);margin:8px 0 0;color:#f0eaf1}
+.certification-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;align-items:center;padding:76px 9%;background:#f8f6f3}.certification-section p{max-width:490px;color:#706a74;line-height:1.85}.certification-section>a{display:block;padding:11px;background:white;box-shadow:0 17px 45px #24152f1c}.certification-section img{display:block;width:100%;height:auto}
+.outreach-years{padding:68px 7% 42px;background:#faf8f5}.outreach-year-filters{display:flex;flex-wrap:wrap;gap:8px;margin:23px 0}.outreach-year-message{color:#6f6672;font-size:12px}.outreach-photo-grid{padding:10px 0 36px;grid-template-columns:repeat(4,minmax(0,1fr))}.outreach-photo-grid:empty{display:none}.outreach-photo-grid .photo-card{opacity:1;transform:none}
+.photo-lightbox{position:fixed;width:min(94vw,1100px);max-width:none;max-height:94vh;padding:20px;border:0;border-radius:12px;background:#1b1123;color:#fff;box-shadow:0 25px 90px #0009;overflow:visible}
+.photo-lightbox::backdrop{background:rgba(13,8,17,.84);backdrop-filter:blur(5px)}.photo-lightbox img{display:block;max-width:100%;max-height:78vh;width:auto;height:auto;margin:0 auto;object-fit:contain}.photo-lightbox p{margin:12px 44px 0 4px;color:#e8dfea;font-size:12px}.lightbox-close{position:absolute;right:-12px;top:-14px;width:42px;height:42px;border:2px solid #fff;border-radius:50%;background:#51335d;color:white;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 4px 15px #0005}
+.donation-options>h2{margin:13px 0 7px}.partner-lead{max-width:690px;color:#706a74;margin:0 0 23px}.donation-option-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.partner-enquiry{max-width:760px;margin:44px auto 20px;padding:28px;background:#fff;border:1px solid #e4dce4}.partner-enquiry h3{font:800 22px var(--head);margin:0 0 5px}.partner-enquiry p,.annual-impact-note{color:#706a74;font-size:12px}.partner-enquiry label{display:block;margin:16px 0;color:#4b4250;font:700 11px var(--head)}.partner-enquiry input,.partner-enquiry select,.partner-enquiry textarea{display:block;width:100%;margin-top:6px;border:1px solid #d9d1dc;background:#fff;padding:12px;font:500 13px var(--sans);color:#2c2630}.partner-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.annual-impact-note{max-width:760px;margin:22px auto 0}
+@media(max-width:950px){.home-programs-four{grid-template-columns:repeat(2,minmax(0,1fr))}.board-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.outreach-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.home-programs-four{padding:48px 7%;gap:11px}.home-programs-four article{padding:17px 14px}.home-programs-four article p{min-height:0}.board-intro{padding:48px 7% 20px}.board-grid{grid-template-columns:1fr;padding:15px 7% 55px;gap:14px}.board-card{padding:21px}.board-beliefs,.certification-section{grid-template-columns:1fr;padding:50px 8%;gap:27px}.vision-mission p{font-size:18px}.outreach-years{padding:48px 6% 25px}.outreach-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-form-row{grid-template-columns:1fr;gap:0}.partner-enquiry{padding:20px}.donation-option-grid{grid-template-columns:1fr}.photo-lightbox{padding:12px}.lightbox-close{right:-5px;top:-12px}.photo-lightbox img{max-height:78vh}}
+@media(prefers-reduced-motion:reduce){.mast-image .hero-archive-photo{animation:none!important}}
