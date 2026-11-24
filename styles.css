@@ -341,3 +341,13 @@ body{background:#f5f3f0;color:#19171c}
 @media(max-width:900px){.supporter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.supporter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.supporter-card{min-height:192px;padding:15px 11px 15px}.supporter-logo{height:88px}.supporter-card h3{font-size:12px}.supporter-kind{font-size:7px}}
 @media(max-width:390px){.supporter-grid{grid-template-columns:1fr}.supporter-card{min-height:170px}.supporter-logo{height:84px}}
+
+/* Unified round identity marks for quiz sponsors and partners */
+.supporter-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;justify-items:center;gap:28px 20px}
+.supporter-card,.supporter-card.sponsor-card,.supporter-card.partner-card{width:100%;min-height:0;padding:0 8px 8px;gap:12px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:flex-start;border:0;border-radius:0;background:transparent;box-shadow:none}
+.supporter-card:before{display:none}
+.supporter-logo{width:clamp(108px,12vw,148px);height:clamp(108px,12vw,148px);flex:0 0 auto;border-radius:50%;overflow:hidden;background:#fff;padding:13px;box-shadow:0 12px 28px #24152f18,0 0 0 5px #eee7f0}
+.supporter-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.supporter-kind,.partner-card .supporter-kind{display:inline-flex;align-items:center;justify-content:center;min-height:24px;padding:5px 11px;border-radius:999px;background:#eee7f0;color:#59325f;font-size:8px;line-height:1.2;letter-spacing:.1em;text-align:center}
+.supporter-card h3,.partner-card h3{max-width:230px;margin:0;color:#2a2030;font:800 14px/1.35 var(--head);overflow-wrap:anywhere}
+@media(max-width:700px){.supporter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.supporter-card,.supporter-card.sponsor-card,.supporter-card.partner-card{min-height:0;padding:0 5px 6px;gap:10px}.supporter-logo{width:clamp(104px,30vw,132px);height:clamp(104px,30vw,132px);padding:12px}.supporter-kind,.partner-card .supporter-kind{font-size:7px;min-height:23px;padding:5px 8px}.supporter-card h3,.partner-card h3{font-size:12px}}
