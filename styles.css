@@ -254,3 +254,12 @@ body{background:#f5f3f0;color:#19171c}
 @media(max-width:950px){.home-programs-four{grid-template-columns:repeat(2,minmax(0,1fr))}.board-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.outreach-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.home-programs-four{padding:48px 7%;gap:11px}.home-programs-four article{padding:17px 14px}.home-programs-four article p{min-height:0}.board-intro{padding:48px 7% 20px}.board-grid{grid-template-columns:1fr;padding:15px 7% 55px;gap:14px}.board-card{padding:21px}.board-beliefs,.certification-section{grid-template-columns:1fr;padding:50px 8%;gap:27px}.vision-mission p{font-size:18px}.outreach-years{padding:48px 6% 25px}.outreach-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-form-row{grid-template-columns:1fr;gap:0}.partner-enquiry{padding:20px}.donation-option-grid{grid-template-columns:1fr}.photo-lightbox{padding:12px}.lightbox-close{right:-5px;top:-12px}.photo-lightbox img{max-height:78vh}}
 @media(prefers-reduced-motion:reduce){.mast-image .hero-archive-photo{animation:none!important}}
+
+/* Homepage CTA, board initials and digital book prices */
+.mast-actions .button-gold{justify-content:center;min-width:190px}
+.board-card .board-portrait{display:block;width:128px;height:128px;margin:0 auto 20px;border-radius:50%;border:5px solid #fff;box-shadow:0 0 0 2px #9c719e;object-fit:cover;background:none}
+.profile-pending{color:#776d79;font-style:italic}
+.book-price{display:block;margin:8px 0 13px;color:#4d3157;font:800 21px/1.2 var(--head)}
+.book-price small{display:block;margin-top:4px;color:#84768b;font:700 8px var(--head);letter-spacing:.12em}
+.book-info .button{justify-content:center}
+.quiz-results-button{margin:4px 0 8px}
