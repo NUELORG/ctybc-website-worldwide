@@ -263,3 +263,21 @@ body{background:#f5f3f0;color:#19171c}
 .book-price small{display:block;margin-top:4px;color:#84768b;font:700 8px var(--head);letter-spacing:.12em}
 .book-info .button{justify-content:center}
 .quiz-results-button{margin:4px 0 8px}
+
+/* Bible Quiz event photo story */
+.quiz-photo-section{padding:68px 0 20px;background:#f0ebf1}
+.quiz-photo-heading{display:grid;grid-template-columns:1fr .72fr;gap:8%;align-items:end;padding:0 7% 28px}
+.quiz-photo-heading h2{font:800 clamp(36px,4.5vw,56px)/1.02 var(--head);letter-spacing:-.06em;margin:14px 0 0;color:#291b31}
+.quiz-photo-heading>p{max-width:500px;color:#665d69;font-size:13px;line-height:1.85;margin:0 0 5px}
+.quiz-photo-gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;padding:0 7% 62px;grid-auto-flow:row}
+.quiz-photo-gallery .quiz-photo-card{grid-column:span 3;aspect-ratio:4/3;opacity:1;transform:none}
+.quiz-photo-gallery .quiz-photo-feature{grid-column:span 6;aspect-ratio:16/10}
+.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+4),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+5){grid-column:span 4;aspect-ratio:4/3}
+.quiz-photo-gallery .quiz-photo-card img{filter:saturate(1.04) contrast(1.03)}
+.quiz-photo-gallery .quiz-photo-card:hover img{filter:saturate(1.09) contrast(1.04)}
+.quiz-photo-gallery .quiz-photo-card figcaption{transform:translateY(0);opacity:1;padding:30px 15px 13px}
+.quiz-photo-gallery .quiz-photo-card figcaption b{font-size:12px}
+.quiz-photo-gallery .quiz-photo-card figcaption span{font-size:9px}
+@media(max-width:900px){.quiz-photo-gallery .quiz-photo-card{grid-column:span 6}.quiz-photo-gallery .quiz-photo-feature{grid-column:span 6}.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+4),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+5){grid-column:span 6}}
+@media(max-width:650px){.quiz-photo-heading{grid-template-columns:1fr;gap:10px;padding-inline:7%}.quiz-photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding-inline:5%}.quiz-photo-gallery .quiz-photo-card,.quiz-photo-gallery .quiz-photo-feature,.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+4),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+5){grid-column:span 1;aspect-ratio:4/3}.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+1),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+2){grid-column:span 2;aspect-ratio:16/10}.quiz-photo-gallery .quiz-photo-card figcaption{padding:25px 9px 9px}.quiz-photo-gallery .quiz-photo-card figcaption b{font-size:10px}.quiz-photo-gallery .quiz-photo-card figcaption span{font-size:8px}}
+@media(max-width:390px){.quiz-photo-gallery{grid-template-columns:1fr}.quiz-photo-gallery .quiz-photo-card,.quiz-photo-gallery .quiz-photo-feature,.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+1),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+2),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+4),.quiz-photo-gallery .quiz-photo-card:nth-of-type(7n+5){grid-column:span 1}}
