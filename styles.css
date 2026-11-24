@@ -231,7 +231,7 @@ body{background:#f5f3f0;color:#19171c}
 .home-programs-four article>a{color:var(--purple);font:700 10px var(--head)}
 .mast-image .hero-archive-photo{animation:hero-gentle-zoom 28s ease-in-out infinite alternate}
 @keyframes hero-gentle-zoom{to{transform:scale(1.09)}}
-.board-hero{background:linear-gradient(90deg,rgba(36,21,47,.91),rgba(36,21,47,.52)),url('assets/board/board-trustees.jpeg') center 24%/cover}
+.board-hero{background:radial-gradient(circle at 82% 38%,rgba(120,77,137,.52),transparent 38%),linear-gradient(110deg,#24152f,#301d3a)}
 .board-hero em{color:var(--gold)}
 .board-intro{padding:70px 8% 34px;text-align:center}
 .board-intro h2,.board-beliefs h2,.certification-section h2,.donation-options>h2,.outreach-years h2{font:800 clamp(34px,4vw,51px)/1.04 var(--head);letter-spacing:-.06em;margin:15px 0}
